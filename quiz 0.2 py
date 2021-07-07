@@ -1,0 +1,71 @@
+score = 0
+difficulty = "easy"
+quit = False
+
+def main():
+  print("")
+  print("")
+  print("(a) ")
+  print("(b) ")
+  print("(c) ")
+  print("(d) ")
+ 
+  choice = input("Please select one: ")
+  
+  if choice == "a":
+    play_game()
+  elif choice == "b":
+    difficulty()
+  elif choice == "c":
+    pass
+  elif choice == "d":
+    pass
+  else:
+    print("Invalid Input")
+    main()
+    
+    def play_game():
+  pass
+    
+def difficulty():
+  print("Choose your difficulty: "
+  print("(a) Easy")
+  print("(b) Hard")
+  
+  choice = input("Choice: ")
+  
+  if choice == "a":
+    difficulty = "easy"
+  
+    
+  
+main()
+
+print ("")
+user_answser = input ()
+
+if user answer == "":
+  print ("")
+elif user_answer "":
+  print("")
+else:
+  print ("")
+  
+  print ("")
+user_answser = input ()
+
+if user answer == "":
+  print ("")
+elif user_answer "":
+  print("")
+else:
+  print ("")
+  
+  score = 0
+  
+  question = [()
+  ()
+  ()]
+  
+  def ask_question ():
+    for question in question:
