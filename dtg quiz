@@ -1,0 +1,90 @@
+def main():
+  easy = [("Which animal features in the logo for lamborghini","Bull"),
+                ("What was the original color for all Ferrari models","Red"),
+                ("Which iconic car manufacturer also made airplane engines","Rolls Royce"),
+                ("Who was a driver for Alpha Romeo before founding his own company","Enzo Ferrari"),
+                ("What is the world’s all-time best selling car","Toyota Corolla"),
+                ("Who designed the Volkswagen Beetle","Ferdinand Porsche"),
+                ("In which year did Henry Ford establish the Ford Motor Company","1903"),
+                ("Which sports car features in the Back To The Future trilogy",""),
+                ("What does Volkswagen mean","People's car in German"),
+                ("What is the best-selling electric car in history","Tesla Model 3")]
+               
+  hard = [("Japanese car company Toyota was originally established as a textiles manufacturer. True or False","True"),
+                ("Which race car is known as the widow maker","Porsche"),
+                ("What does BMW stand for","Bayerische Motoren Werke"),
+                ("Which is the fastest road-going car in the world","SSC Tuatara"),
+                ("How many rings are in the Audi logo","4"),
+                ("Which iconic car has appeared in seven Bond films, making its debut in the 1964 Goldfinger","Aston Martin DB5"),
+                ("What is the oldest car company still in business today","Mercedes-Benz"),
+                ("What is the most expensive car in the world","Bugatti La Voiture Noire"),
+                (" Which is the famous car that was designed to compete with the Ford Mustang","Chevrolet Camaro"),
+                ("Who bought Rolls Royce in 1998","BMW")]
+                
+  print("welcome to the 2021 dtg quiz!")
+  print("<---Main Menu--->")
+  print("(a) Play Quiz")
+  print("(b) High Scores")
+  print("(c) Quit")
+ 
+  choice = input("Please select one: ")
+  
+  if choice == "a":
+    questions = difficulty(easy,hard)
+    play_game(questions)
+  elif choice == "b":
+    high_scores()
+  elif choice == "c":
+    pass
+  else:
+    print("Invalid Input")
+    main()
+    
+def play_game(questions):
+
+  score = ask_questions (questions)
+  
+def difficulty(easy,hard):
+  print("Choose your difficulty: ")
+  print("(a) Easy")
+  print("(b) Hard")
+  
+  choice = input("Choice: ")
+  
+  if choice == "a":
+    questions = easy
+  elif choice == "b":
+    questions = hard
+  return questions
+    
+def high_scores():
+  high_score = [
+                   (17,"mark"),
+                   (13,"donte"),
+                    (11,"ethan"), ]
+                   
+  for player in high_score:
+    print(player)
+
+  main()
+
+
+
+
+              
+def ask_questions(questions):
+  score = 0
+  for question in questions:
+    print(question[0])
+    response = input()
+    if response == question[1]:
+      score += 1
+      print("correct")
+    else:
+      print("wrong")
+      
+  return score
+
+
+main()
+  
